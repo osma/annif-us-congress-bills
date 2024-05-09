@@ -68,13 +68,18 @@ annif train ls-parabel-en legislative_subject-train.tsv.gz
 annif train ls-bonsai-en legislative_subject-train.tsv.gz
 ```
 
+Training of the models took less than 1 hour each on a Lenovo T14 laptop,
+except for the Bonsai model that took 4 hours.
+
 ## Evaluation
 
 The projects were evaluated using the `annif eval` command against the test
 set records. The legislative subject projects were additionally evaluated
 using the `annif optimize` command to find out the `limit` and `threshold`
 parameters that maximize the F1 score. The precision and recall have been
-reported using the same values for `limit` and `threshold`.
+reported using the same values for `limit` and `threshold`. The size of the
+model files on disk are also reported. The RAM requirements for running the
+models are somewhat more than the file sizes, but they correlate.
 
 ## Results
 
