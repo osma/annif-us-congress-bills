@@ -14,7 +14,7 @@ title and text of the bill.
 
 ## Data preparation
 
-The Jupyter notebook [dataset-to-corpus.ipynb)(dataset-to-corpus.ipynb)
+The Jupyter notebook [dataset-to-corpus.ipynb](dataset-to-corpus.ipynb)
 loads the original data set directly from Hugging Face Hub using the
 `datasets` library and then converts it into corpus files in a format
 suitable for Annif. The original data set is also split into 90% train /
